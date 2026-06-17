@@ -8,151 +8,140 @@
 <meta name="description" content="Martinsburg Plumbing provides plumbing repair, leak detection, water heater installation, sewer repair, and more throughout Berkeley, Morgan, and Jefferson Counties in West Virginia.">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+    color:#333;
 
-    background:
-        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-        url('background.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /* FULL STRENGTH BACKGROUND IMAGE */
+    background:url('background.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 /* HEADER */
-header {
-    text-align: center;
-    padding: 60px 20px 30px;
+header{
+    text-align:center;
+    padding:60px 20px 30px;
+    color:white;
 }
 
-header img {
-    max-width: 300px;
-    width: 80%;
+header img{
+    max-width:300px;
+    width:80%;
 }
 
-header h1 {
-    color: #c62828;
-    font-size: 3rem;
-    margin-top: 15px;
+header h1{
+    font-size:3rem;
+    margin-top:15px;
 }
 
-header p {
-    font-size: 1.2rem;
+header p{
+    font-size:1.2rem;
 }
 
 /* BUTTONS */
-.buttons {
-    text-align: center;
-    margin: 20px;
+.buttons{
+    text-align:center;
+    margin:20px;
 }
 
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    margin: 8px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
+.button{
+    display:inline-block;
+    padding:15px 25px;
+    margin:8px;
+    border-radius:8px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
 }
 
-.call { background: #28a745; }
-.email { background: #007bff; }
-.appointment { background: #c62828; }
+.call{background:#28a745;}
+.email{background:#007bff;}
+.appointment{background:#c62828;}
 
-/* PANELS */
-.panel {
-    max-width: 1100px;
-    margin: 25px auto;
-    padding: 35px;
-    background: rgba(255,255,255,0.92);
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+/* CONTENT PANELS (ONLY THESE ARE LIGHT) */
+.panel{
+    max-width:1100px;
+    margin:25px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,0.92);
+
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
 }
 
-h2 {
-    color: #c62828;
-    text-align: center;
-    margin-bottom: 25px;
+h2{
+    color:#c62828;
+    text-align:center;
+    margin-bottom:25px;
 }
 
 /* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
 }
 
-.box {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+.box{
+    background:#f4f4f4;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
 }
 
-/* LIST */
-.area-list {
-    list-style: none;
-    text-align: center;
+/* SERVICE AREAS */
+.area-list{
+    list-style:none;
+    text-align:center;
 }
 
-.area-list li {
-    padding: 8px;
-    font-size: 18px;
+.area-list li{
+    padding:8px;
+    font-size:18px;
 }
 
 /* MAP */
-.map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+.map iframe{
+    width:100%;
+    height:450px;
+    border:0;
 }
 
 /* CONTACT */
-.contact {
-    text-align: center;
-    font-size: 18px;
+.contact{
+    text-align:center;
+    font-size:18px;
 }
 
-.contact p {
-    margin: 10px 0;
+.contact p{
+    margin:10px 0;
 }
 
 /* FOOTER */
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    .button {
-        display: block;
-        max-width: 320px;
-        margin: 10px auto;
-    }
-
-    .panel {
-        margin: 15px;
-        padding: 25px;
-    }
+@media(max-width:768px){
+    header h1{font-size:2.2rem;}
+    .button{display:block;max-width:320px;margin:10px auto;}
+    .panel{margin:15px;padding:25px;}
 }
 </style>
 </head>
@@ -173,57 +162,75 @@ footer {
 </div>
 
 <div class="panel">
-    <h2>Our Services</h2>
-    <div class="grid">
-        <div class="box">Leak Repair</div>
-        <div class="box">Faucet Installation</div>
-        <div class="box">Water Heater Installation</div>
-        <div class="box">Water Heater Repair</div>
-        <div class="box">Pipe Repair</div>
-        <div class="box">Sewer Repair</div>
-        <div class="box">Toilet Repair</div>
-        <div class="box">Shower Repair</div>
-    </div>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="box">Find & Repair Leaks</div>
+<div class="box">Faucet Installation</div>
+<div class="box">Garbage Disposal Installation</div>
+<div class="box">Water Heater Installation</div>
+<div class="box">Faucet Repair</div>
+<div class="box">Garbage Disposal Repair</div>
+<div class="box">Outdoor Systems Repair</div>
+<div class="box">Pipe Repair</div>
+<div class="box">Sewer Repair</div>
+<div class="box">Shower Repair</div>
+<div class="box">Toilet Repair</div>
+<div class="box">Water Heater Repair</div>
+</div>
 </div>
 
 <div class="panel">
-    <h2>Service Areas</h2>
-    <ul class="area-list">
-        <li>Berkeley County</li>
-        <li>Morgan County</li>
-        <li>Jefferson County</li>
-    </ul>
+<h2>Service Areas</h2>
+<ul class="area-list">
+<li>Berkeley County</li>
+<li>Morgan County</li>
+<li>Jefferson County</li>
+</ul>
 </div>
 
 <div class="panel">
-    <h2>Service Area Map</h2>
-    <p style="text-align:center;margin-bottom:15px;">
-        Serving Berkeley, Morgan & Jefferson Counties
-    </p>
-    <div class="map">
-        <iframe src="https://maps.google.com/maps?q=Eastern%20Panhandle%20West%20Virginia&z=9&output=embed"></iframe>
-    </div>
+<h2>Service Area Map</h2>
+<p style="text-align:center;margin-bottom:15px;">
+Serving Berkeley, Morgan & Jefferson Counties in West Virginia
+</p>
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Eastern%20Panhandle%20West%20Virginia&z=9&output=embed"></iframe>
+</div>
 </div>
 
 <div class="panel">
-    <h2>What Customers Say</h2>
-    <div class="grid">
-        <div class="box">“Fast, reliable, and professional.” — Randall</div>
-        <div class="box">“Great service and quick response.” — Stephen</div>
-        <div class="box">“Fixed our leak same day.” — Greg</div>
-    </div>
+<h2>What Our Customers Say</h2>
+
+<div class="grid">
+
+<div class="box">
+“Local family owned business. Tab and Kyle are very friendly and treat you like family. Their work is very affordable, professional, and meticulous. I had an outside water line leak which was completed in 5 hours. They closed the trench carefully and cleaned up around the area. I highly recommend Martinsburg Plumbing for all plumbing problems. You will be highly satisfied.”
+<br><br>— Randall
+</div>
+
+<div class="box">
+“These guys are great! After calling a couple of other companies who never returned my calls, my better half found Martinsburg Plumbing online and gave me their number. The owner answered the call quickly and we set an appointment for a day I would be home. They did great work and at a very fair price. I can’t be happier!”
+<br><br>— Stephen
+</div>
+
+<div class="box">
+“If you need a plumber, call Martinsburg Plumbing first! They answered my call right away and came out the same day! We had a major leak in our service line, they found it and fixed it as soon as possible. I still have not heard from the 24 hour emergency service plumber I called before them! These guys are pros!”
+<br><br>— Greg
+</div>
+
+</div>
 </div>
 
 <div class="panel">
-    <h2>Contact</h2>
-    <div class="contact">
-        <p>Phone: 304-582-9156</p>
-        <p>Email: martinsburgplumbing@gmail.com</p>
-    </div>
+<h2>Contact</h2>
+<div class="contact">
+<p>Phone: 304-582-9156</p>
+<p>Email: martinsburgplumbing@gmail.com</p>
+</div>
 </div>
 
 <footer>
-    © 2026 Martinsburg Plumbing
+© 2026 Martinsburg Plumbing
 </footer>
 
 </body>
