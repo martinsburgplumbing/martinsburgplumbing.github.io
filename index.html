@@ -11,18 +11,27 @@ body {
     margin: 0;
     color: #333;
     line-height: 1.6;
+    background: #fff;
 }
 
+/* HEADER */
 header {
     background: #0056b3;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
-.buttons {
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* BUTTONS */
+.button-container {
     text-align: center;
-    margin: 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
 .button {
@@ -33,6 +42,7 @@ header {
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .call {
@@ -43,12 +53,18 @@ header {
     background: #007bff;
 }
 
+/* SECTIONS */
 section {
     max-width: 1000px;
     margin: auto;
     padding: 30px 20px;
 }
 
+h2 {
+    color: #0056b3;
+}
+
+/* SERVICES GRID */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -58,14 +74,16 @@ section {
 .service-box {
     background: #f4f4f4;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
+/* FOOTER */
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
 </style>
 
@@ -75,19 +93,20 @@ footer {
 
 <header>
     <h1>Martinsburg Plumbing</h1>
-    <p>Reliable Plumbing Services in Your Area</p>
+    <p>Reliable Plumbing Services You Can Trust</p>
     <p>Serving Berkeley, Morgan & Jefferson Counties</p>
 </header>
 
-<div class="buttons">
+<!-- CALL / EMAIL BUTTONS (FIXED AND VISIBLE) -->
+<div class="button-container">
     <a class="button call" href="tel:3045829156">📞 Call Now</a>
     <a class="button email" href="mailto:martinsburgplumbing@gmail.com">✉️ Email Us</a>
 </div>
 
 <section>
     <h2>Our Services</h2>
-    <div class="services">
 
+    <div class="services">
         <div class="service-box">Find & Repair Leaks</div>
         <div class="service-box">Install Faucet</div>
         <div class="service-box">Install Garbage Disposal</div>
@@ -100,13 +119,11 @@ footer {
         <div class="service-box">Repair Shower</div>
         <div class="service-box">Repair Toilet</div>
         <div class="service-box">Repair Water Heater</div>
-
     </div>
 </section>
 
 <section>
-    <h2>Service Area</h2>
-    <p>We proudly serve:</p>
+    <h2>Service Areas</h2>
     <ul>
         <li>Berkeley County</li>
         <li>Morgan County</li>
@@ -118,7 +135,7 @@ footer {
     <h2>Why Choose Us?</h2>
     <ul>
         <li>Fast Response Times</li>
-        <li>Reliable Local Service</li>
+        <li>Local Reliable Service</li>
         <li>Affordable Pricing</li>
         <li>Experienced Plumbing Work</li>
     </ul>
