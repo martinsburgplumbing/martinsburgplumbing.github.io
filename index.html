@@ -19,19 +19,19 @@ header {
     background: #0056b3;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+header img {
+    max-width: 140px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 /* BUTTONS */
-.button-container {
+.buttons {
     text-align: center;
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin: 20px;
 }
 
 .button {
@@ -64,14 +64,14 @@ h2 {
     color: #0056b3;
 }
 
-/* SERVICES GRID */
-.services {
+/* GRID */
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-.service-box {
+.box {
     background: #f4f4f4;
     padding: 15px;
     border-radius: 6px;
@@ -83,7 +83,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
 }
 </style>
 
@@ -92,36 +91,41 @@ footer {
 <body>
 
 <header>
+    <!-- LOGO -->
+    <img src="logo.png" alt="Martinsburg Plumbing Logo">
+
     <h1>Martinsburg Plumbing</h1>
     <p>Reliable Plumbing Services You Can Trust</p>
     <p>Serving Berkeley, Morgan & Jefferson Counties</p>
 </header>
 
-<!-- CALL / EMAIL BUTTONS (FIXED AND VISIBLE) -->
-<div class="button-container">
+<!-- CALL + EMAIL BUTTONS -->
+<div class="buttons">
     <a class="button call" href="tel:3045829156">📞 Call Now</a>
     <a class="button email" href="mailto:martinsburgplumbing@gmail.com">✉️ Email Us</a>
 </div>
 
+<!-- SERVICES -->
 <section>
     <h2>Our Services</h2>
 
-    <div class="services">
-        <div class="service-box">Find & Repair Leaks</div>
-        <div class="service-box">Install Faucet</div>
-        <div class="service-box">Install Garbage Disposal</div>
-        <div class="service-box">Install Water Heater</div>
-        <div class="service-box">Repair Faucet</div>
-        <div class="service-box">Repair Garbage Disposal</div>
-        <div class="service-box">Repair Outdoor Systems</div>
-        <div class="service-box">Repair Pipe</div>
-        <div class="service-box">Repair Sewer</div>
-        <div class="service-box">Repair Shower</div>
-        <div class="service-box">Repair Toilet</div>
-        <div class="service-box">Repair Water Heater</div>
+    <div class="grid">
+        <div class="box">Find & Repair Leaks</div>
+        <div class="box">Install Faucet</div>
+        <div class="box">Install Garbage Disposal</div>
+        <div class="box">Install Water Heater</div>
+        <div class="box">Repair Faucet</div>
+        <div class="box">Repair Garbage Disposal</div>
+        <div class="box">Repair Outdoor Systems</div>
+        <div class="box">Repair Pipe</div>
+        <div class="box">Repair Sewer</div>
+        <div class="box">Repair Shower</div>
+        <div class="box">Repair Toilet</div>
+        <div class="box">Repair Water Heater</div>
     </div>
 </section>
 
+<!-- SERVICE AREA -->
 <section>
     <h2>Service Areas</h2>
     <ul>
@@ -131,16 +135,29 @@ footer {
     </ul>
 </section>
 
+<!-- TESTIMONIALS -->
 <section>
-    <h2>Why Choose Us?</h2>
-    <ul>
-        <li>Fast Response Times</li>
-        <li>Local Reliable Service</li>
-        <li>Affordable Pricing</li>
-        <li>Experienced Plumbing Work</li>
-    </ul>
+    <h2>What Customers Say</h2>
+
+    <div class="grid">
+        <div class="box">
+            “Fast and professional service. Fixed my leak the same day!”<br>
+            — John D.
+        </div>
+
+        <div class="box">
+            “Great pricing and excellent work on my water heater.”<br>
+            — Sarah M.
+        </div>
+
+        <div class="box">
+            “Came out quickly for an emergency pipe burst. Highly recommend.”<br>
+            — Mike R.
+        </div>
+    </div>
 </section>
 
+<!-- CONTACT -->
 <section>
     <h2>Contact</h2>
     <p><strong>Phone:</strong> 304-582-9156</p>
