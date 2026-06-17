@@ -22,6 +22,7 @@ body{
     color:#333;
     position:relative;
 
+    /* FULL IMAGE (NO BLUR, NO FADE) */
     background-image:url("background.jpg");
     background-size:cover;
     background-position:center;
@@ -29,7 +30,7 @@ body{
     background-attachment:fixed;
 }
 
-/* TINT OVERLAY (THIS IS THE NEW LOOK) */
+/* DARK TINT OVERLAY (SUBTLE, PROFESSIONAL) */
 body::before{
     content:"";
     position:fixed;
@@ -37,7 +38,7 @@ body::before{
     left:0;
     width:100%;
     height:100%;
-    background:rgba(198,40,40,0.18); /* soft red tint */
+    background:rgba(0,0,0,0.45);
     z-index:-1;
 }
 
@@ -93,6 +94,7 @@ header p{
     box-shadow:0 3px 12px rgba(0,0,0,0.15);
 }
 
+/* HEADINGS */
 h2{
     color:#c62828;
     text-align:center;
@@ -113,7 +115,7 @@ h2{
     text-align:center;
 }
 
-/* LIST */
+/* SERVICE AREAS */
 .area-list{
     list-style:none;
     text-align:center;
