@@ -5,184 +5,196 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Martinsburg Plumbing | Reliable Plumbing Services</title>
+<title>Martinsburg Plumbing</title>
 
-<meta name="description" content="Martinsburg Plumbing provides plumbing repairs, leak detection, sewer repairs, water heater services, and more throughout Berkeley, Morgan, and Jefferson Counties in West Virginia.">
+<meta name="description" content="Martinsburg Plumbing provides plumbing repairs, water heater installation, leak repair, sewer repair and more throughout Berkeley, Morgan and Jefferson Counties in West Virginia.">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background: #ffffff;
-}
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
 
-/* HERO SECTION */
-header {
+    /* BACKGROUND IMAGE FOR ENTIRE SITE */
     background:
         linear-gradient(
-            rgba(0,0,0,0.60),
-            rgba(0,0,0,0.60)
+            rgba(255,255,255,0.85),
+            rgba(255,255,255,0.85)
         ),
         url('background.jpg');
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
-header img {
-    max-width: 280px;
-    width: 80%;
-    height: auto;
-    margin-bottom: 20px;
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:60px 20px 30px;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+header img{
+    max-width:300px;
+    width:80%;
+    height:auto;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 5px 0;
+header h1{
+    color:#c62828;
+    font-size:3rem;
+    margin-top:15px;
+}
+
+header p{
+    font-size:1.2rem;
 }
 
 /* BUTTONS */
-.buttons {
-    text-align: center;
-    padding: 25px 15px;
+
+.buttons{
+    text-align:center;
+    margin:20px;
 }
 
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    margin: 8px;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .3s;
+.button{
+    display:inline-block;
+    padding:15px 25px;
+    margin:8px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
 }
 
-.button:hover {
-    opacity: .9;
+.call{
+    background:#28a745;
 }
 
-.call {
-    background: #28a745;
+.email{
+    background:#007bff;
 }
 
-.email {
-    background: #007bff;
+.appointment{
+    background:#c62828;
 }
 
-.appointment {
-    background: #c62828;
+/* CONTENT PANELS */
+
+.panel{
+    max-width:1100px;
+    margin:25px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,.92);
+
+    border-radius:12px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
-/* SECTION STYLING */
-section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
+h2{
+    color:#c62828;
+    text-align:center;
+    margin-bottom:25px;
 }
 
-h2 {
-    text-align: center;
-    color: #c62828;
-    margin-bottom: 25px;
-    font-size: 2rem;
+/* SERVICES */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
 }
 
-/* SERVICES GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+.box{
+    background:#f4f4f4;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
 }
 
-.box {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+/* SERVICE AREA */
+
+.area-list{
+    list-style:none;
+    text-align:center;
 }
 
-/* SERVICE AREA LIST */
-.service-list {
-    list-style: none;
-    text-align: center;
-}
-
-.service-list li {
-    padding: 10px;
-    font-size: 18px;
+.area-list li{
+    padding:8px;
+    font-size:18px;
 }
 
 /* MAP */
-.map-container {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+
+.map{
+    overflow:hidden;
+    border-radius:10px;
 }
 
-/* REVIEWS */
-.review {
-    text-align: left;
+iframe{
+    width:100%;
+    height:500px;
+    border:0;
+}
+
+/* TESTIMONIALS */
+
+.review{
+    text-align:left;
 }
 
 /* CONTACT */
-.contact {
-    text-align: center;
-    font-size: 18px;
+
+.contact{
+    text-align:center;
+    font-size:18px;
 }
 
-.contact p {
-    margin: 10px 0;
+.contact p{
+    margin:10px 0;
 }
 
 /* FOOTER */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
 
-    header {
-        padding: 70px 20px;
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.2rem;
     }
 
-    header h1 {
-        font-size: 2.2rem;
+    .button{
+        display:block;
+        max-width:320px;
+        margin:10px auto;
     }
 
-    header p {
-        font-size: 1rem;
-    }
-
-    .button {
-        display: block;
-        max-width: 320px;
-        margin: 10px auto;
+    .panel{
+        margin:15px;
+        padding:25px;
     }
 }
+
 </style>
 </head>
 
@@ -217,7 +229,7 @@ footer {
 
 </div>
 
-<section>
+<div class="panel">
 
     <h2>Our Services</h2>
 
@@ -238,44 +250,41 @@ footer {
 
     </div>
 
-</section>
+</div>
 
-<section>
+<div class="panel">
 
     <h2>Service Areas</h2>
 
-    <ul class="service-list">
-        <li>Berkeley County</li>
-        <li>Morgan County</li>
-        <li>Jefferson County</li>
+    <ul class="area-list">
+        <li>Berkeley County, WV</li>
+        <li>Morgan County, WV</li>
+        <li>Jefferson County, WV</li>
     </ul>
 
-</section>
+</div>
 
-<section>
+<div class="panel">
 
-    <h2>Our Service Area Map</h2>
+    <h2>Service Area Map</h2>
 
     <p style="text-align:center; margin-bottom:20px;">
-        Proudly serving homeowners and businesses throughout Berkeley, Morgan,
-        and Jefferson Counties.
+        Martinsburg Plumbing proudly serves Berkeley County, Morgan County,
+        and Jefferson County throughout West Virginia's Eastern Panhandle.
     </p>
 
-    <div class="map-container">
+    <div class="map">
 
         <iframe
-            src="https://maps.google.com/maps?q=Martinsburg%20WV&t=&z=10&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="450"
-            style="border:0;"
-            loading="lazy">
+        src="https://maps.google.com/maps?q=Eastern%20Panhandle%20West%20Virginia&t=&z=9&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
         </iframe>
 
     </div>
 
-</section>
+</div>
 
-<section>
+<div class="panel">
 
     <h2>What Our Customers Say</h2>
 
@@ -283,27 +292,24 @@ footer {
 
         <div class="box review">
             “Local family owned business. Tab and Kyle are very friendly and treat you like family. Their work is very affordable, professional, and meticulous. I had an outside water line leak which was completed in 5 hours. They closed the trench carefully and cleaned up around the area. I highly recommend Martinsburg Plumbing for all plumbing problems. You will be highly satisfied.”
-            <br><br>
-            <strong>— Randall</strong>
+            <br><br><strong>— Randall</strong>
         </div>
 
         <div class="box review">
             “These guys are great! After calling a couple of other companies who never returned my calls, my better half found Martinsburg Plumbing online and gave me their number. The owner answered the call quickly and we set an appointment for a day I would be home. They did great work and at a very fair price. I can’t be happier!”
-            <br><br>
-            <strong>— Stephen</strong>
+            <br><br><strong>— Stephen</strong>
         </div>
 
         <div class="box review">
             “If you need a plumber, call Martinsburg Plumbing first! They answered my call right away and came out the same day! We had a major leak in our service line, they found it and fixed it as soon as possible. I still have not heard from the 24 hour emergency service plumber I called before them! These guys are pros!”
-            <br><br>
-            <strong>— Greg</strong>
+            <br><br><strong>— Greg</strong>
         </div>
 
     </div>
 
-</section>
+</div>
 
-<section>
+<div class="panel">
 
     <h2>Contact Us</h2>
 
@@ -317,10 +323,12 @@ footer {
 
     </div>
 
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Martinsburg Plumbing. All Rights Reserved.</p>
+
+    © 2026 Martinsburg Plumbing. All Rights Reserved.
+
 </footer>
 
 </body>
