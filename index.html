@@ -20,13 +20,25 @@ body{
     font-family:Arial,sans-serif;
     line-height:1.6;
     color:#333;
+    position:relative;
 
-    /* FULL PAGE BACKGROUND IMAGE (NO OVERLAY) */
     background-image:url("background.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
+}
+
+/* TINT OVERLAY (THIS IS THE NEW LOOK) */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(198,40,40,0.18); /* soft red tint */
+    z-index:-1;
 }
 
 /* HEADER */
@@ -62,7 +74,7 @@ header p{
     margin:8px;
     border-radius:8px;
     text-decoration:none;
-    color:white;
+    color:#fff;
     font-size:18px;
     font-weight:bold;
 }
@@ -76,9 +88,7 @@ header p{
     max-width:1100px;
     margin:25px auto;
     padding:35px;
-
     background:rgba(255,255,255,0.92);
-
     border-radius:12px;
     box-shadow:0 3px 12px rgba(0,0,0,0.15);
 }
@@ -103,7 +113,7 @@ h2{
     text-align:center;
 }
 
-/* SERVICE AREAS */
+/* LIST */
 .area-list{
     list-style:none;
     text-align:center;
@@ -134,7 +144,7 @@ h2{
 /* FOOTER */
 footer{
     background:#222;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:20px;
     margin-top:30px;
@@ -166,9 +176,7 @@ footer{
 </div>
 
 <div class="panel">
-
 <h2>Our Services</h2>
-
 <div class="grid">
 <div class="box">Find & Repair Leaks</div>
 <div class="box">Faucet Installation</div>
@@ -183,37 +191,28 @@ footer{
 <div class="box">Toilet Repair</div>
 <div class="box">Water Heater Repair</div>
 </div>
-
 </div>
 
 <div class="panel">
-
 <h2>Service Areas</h2>
-
 <ul class="area-list">
 <li>Berkeley County</li>
 <li>Morgan County</li>
 <li>Jefferson County</li>
 </ul>
-
 </div>
 
 <div class="panel">
-
 <h2>Service Area Map</h2>
-
 <p style="text-align:center;margin-bottom:15px;">
 Serving Berkeley, Morgan & Jefferson Counties in West Virginia
 </p>
-
 <div class="map">
 <iframe src="https://maps.google.com/maps?q=Eastern%20Panhandle%20West%20Virginia&z=9&output=embed"></iframe>
 </div>
-
 </div>
 
 <div class="panel">
-
 <h2>What Our Customers Say</h2>
 
 <div class="grid">
@@ -234,18 +233,14 @@ Serving Berkeley, Morgan & Jefferson Counties in West Virginia
 </div>
 
 </div>
-
 </div>
 
 <div class="panel">
-
 <h2>Contact</h2>
-
 <div class="contact">
 <p>Phone: 304-582-9156</p>
 <p>Email: martinsburgplumbing@gmail.com</p>
 </div>
-
 </div>
 
 <footer>
