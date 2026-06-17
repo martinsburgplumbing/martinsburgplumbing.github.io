@@ -4,48 +4,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Martinsburg Plumbing</title>
+
+<title>Martinsburg Plumbing | Reliable Plumbing Services</title>
+
+<meta name="description" content="Martinsburg Plumbing provides plumbing repairs, leak detection, sewer repairs, water heater services, and more throughout Berkeley, Morgan, and Jefferson Counties in West Virginia.">
 
 <style>
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    color: #333;
-    line-height: 1.6;
-    background: #fff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+/* HERO SECTION */
 header {
-    background: #c62828;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.60),
+            rgba(0,0,0,0.60)
+        ),
+        url('background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 100px 20px;
 }
 
 header img {
-    max-width: 250px;
+    max-width: 280px;
     width: 80%;
     height: auto;
-    display: block;
-    margin: 0 auto 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 /* BUTTONS */
 .buttons {
     text-align: center;
-    margin: 20px;
+    padding: 25px 15px;
 }
 
 .button {
     display: inline-block;
     padding: 15px 25px;
-    margin: 10px;
+    margin: 8px;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
+    transition: .3s;
+}
+
+.button:hover {
+    opacity: .9;
 }
 
 .call {
@@ -60,18 +92,21 @@ header img {
     background: #c62828;
 }
 
-/* SECTIONS */
+/* SECTION STYLING */
 section {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 50px 20px;
 }
 
 h2 {
+    text-align: center;
     color: #c62828;
+    margin-bottom: 25px;
+    font-size: 2rem;
 }
 
-/* GRID */
+/* SERVICES GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -80,8 +115,42 @@ h2 {
 
 .box {
     background: #f4f4f4;
-    padding: 15px;
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* SERVICE AREA LIST */
+.service-list {
+    list-style: none;
+    text-align: center;
+}
+
+.service-list li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* MAP */
+.map-container {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+
+/* REVIEWS */
+.review {
+    text-align: left;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact p {
+    margin: 10px 0;
 }
 
 /* FOOTER */
@@ -89,24 +158,53 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .button {
+        display: block;
+        max-width: 320px;
+        margin: 10px auto;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <img src="./logo.png" alt="Martinsburg Plumbing Logo">
+
+    <img src="logo.png" alt="Martinsburg Plumbing Logo">
 
     <h1>Martinsburg Plumbing</h1>
+
     <p>Reliable Plumbing Services You Can Trust</p>
+
     <p>Serving Berkeley, Morgan & Jefferson Counties</p>
+
 </header>
 
 <div class="buttons">
-    <a class="button call" href="tel:3045829156">📞 Call Now</a>
+
+    <a class="button call" href="tel:3045829156">
+        📞 Call Now
+    </a>
 
     <a class="button email" href="mailto:martinsburgplumbing@gmail.com">
         ✉️ Email Us
@@ -114,14 +212,17 @@ footer {
 
     <a class="button appointment"
        href="sms:3042401770?body=Hi%2C%20I'd%20like%20to%20request%20a%20plumbing%20appointment.">
-       📅 Request Appointment
+        📅 Request Appointment
     </a>
+
 </div>
 
 <section>
+
     <h2>Our Services</h2>
 
     <div class="grid">
+
         <div class="box">Find & Repair Leaks</div>
         <div class="box">Faucet Installation</div>
         <div class="box">Garbage Disposal Installation</div>
@@ -134,49 +235,92 @@ footer {
         <div class="box">Shower Repair</div>
         <div class="box">Toilet Repair</div>
         <div class="box">Water Heater Repair</div>
+
     </div>
+
 </section>
 
 <section>
+
     <h2>Service Areas</h2>
-    <ul>
+
+    <ul class="service-list">
         <li>Berkeley County</li>
         <li>Morgan County</li>
         <li>Jefferson County</li>
     </ul>
+
 </section>
 
 <section>
+
+    <h2>Our Service Area Map</h2>
+
+    <p style="text-align:center; margin-bottom:20px;">
+        Proudly serving homeowners and businesses throughout Berkeley, Morgan,
+        and Jefferson Counties.
+    </p>
+
+    <div class="map-container">
+
+        <iframe
+            src="https://maps.google.com/maps?q=Martinsburg%20WV&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+<section>
+
     <h2>What Our Customers Say</h2>
 
     <div class="grid">
 
-        <div class="box">
+        <div class="box review">
             “Local family owned business. Tab and Kyle are very friendly and treat you like family. Their work is very affordable, professional, and meticulous. I had an outside water line leak which was completed in 5 hours. They closed the trench carefully and cleaned up around the area. I highly recommend Martinsburg Plumbing for all plumbing problems. You will be highly satisfied.”
-            <br><br>— Randall
+            <br><br>
+            <strong>— Randall</strong>
         </div>
 
-        <div class="box">
+        <div class="box review">
             “These guys are great! After calling a couple of other companies who never returned my calls, my better half found Martinsburg Plumbing online and gave me their number. The owner answered the call quickly and we set an appointment for a day I would be home. They did great work and at a very fair price. I can’t be happier!”
-            <br><br>— Stephen
+            <br><br>
+            <strong>— Stephen</strong>
         </div>
 
-        <div class="box">
+        <div class="box review">
             “If you need a plumber, call Martinsburg Plumbing first! They answered my call right away and came out the same day! We had a major leak in our service line, they found it and fixed it as soon as possible. I still have not heard from the 24 hour emergency service plumber I called before them! These guys are pros!”
-            <br><br>— Greg
+            <br><br>
+            <strong>— Greg</strong>
         </div>
 
     </div>
+
 </section>
 
 <section>
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> 304-582-9156</p>
-    <p><strong>Email:</strong> martinsburgplumbing@gmail.com</p>
+
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+
+        <p><strong>Phone:</strong> 304-582-9156</p>
+
+        <p><strong>Email:</strong> martinsburgplumbing@gmail.com</p>
+
+        <p><strong>Serving:</strong> Berkeley, Morgan & Jefferson Counties</p>
+
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 Martinsburg Plumbing</p>
+    <p>© 2026 Martinsburg Plumbing. All Rights Reserved.</p>
 </footer>
 
 </body>
